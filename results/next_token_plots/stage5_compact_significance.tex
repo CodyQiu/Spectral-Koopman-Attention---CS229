@@ -1,0 +1,24 @@
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{c l l c c}
+\hline
+Rank & Comparison & Mean LM Losses & $p$-value & Significant? \\
+\hline
+8 & winner vs runner up & random_orth 6.092 vs. change_a_b 6.287 & $0.363$ & No \\
+8 & winner vs svd sqrt & random_orth 6.092 vs. svd_sqrt 6.687 & $1.63e-04$ & Yes \\
+8 & runner up vs svd sqrt & change_a_b 6.287 vs. svd_sqrt 6.687 & $0.067$ & No \\
+16 & winner vs runner up & random_orth 6.213 vs. svd_noscale 6.548 & $0.028$ & Yes \\
+16 & winner vs svd sqrt & random_orth 6.213 vs. svd_sqrt 6.645 & $1.26e-04$ & Yes \\
+16 & runner up vs svd sqrt & svd_noscale 6.548 vs. svd_sqrt 6.645 & $0.451$ & No \\
+32 & winner vs runner up & change_b 6.782 vs. change_a_b 6.809 & $0.696$ & No \\
+32 & winner vs svd sqrt & change_b 6.782 vs. svd_sqrt 6.966 & $0.012$ & Yes \\
+32 & runner up vs svd sqrt & change_a_b 6.809 vs. svd_sqrt 6.966 & $2.78e-04$ & Yes \\
+64 & winner vs runner up & change_a_b 6.466 vs. change_b 6.860 & $3.55e-04$ & Yes \\
+64 & winner vs svd sqrt & change_a_b 6.466 vs. svd_sqrt 7.124 & $4.00e-15$ & Yes \\
+64 & runner up vs svd sqrt & change_b 6.860 vs. svd_sqrt 7.124 & $7.78e-04$ & Yes \\
+\hline
+\end{tabular}
+\caption{Compact paired significance tests for final Stage 5 LM loss. Tests are paired by random seed and are not Bonferroni-corrected.}
+\label{tab:stage5-compact-significance}
+\end{table}
