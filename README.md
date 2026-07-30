@@ -14,7 +14,13 @@ In contrast, this CS229 project introduces data-driven initialization methods, i
 
 - `koopman_proxy_experiments/`: Code for the Koopman proxy experiments.
 - `next_token_experiments/`: Code for the downstream next-token prediction experiments.
+- `papers/`: The project poster and final report.
 - `results/`: CSVs, LaTeX tables, and plots used in the report.
+
+## Papers
+
+- [Project poster: Learning Spectral Initializations for Low-Rank Attention](papers/Learning_Spectral_Initializations_Poster.pdf)
+- [CS229 project final report](papers/CS229_Project_Final_Report.pdf)
 
 ## Main Scripts
 
